@@ -47,7 +47,7 @@
 
         .search-bar button {
             padding: 10px 20px;
-            font-size: 18px;
+            font-size: 16px;
             cursor: pointer;
         }
 
@@ -81,9 +81,18 @@
             justify-content: center;
             cursor: pointer;
         }
-        .category-buttons button ,.feature-buttons button 
+        .category-buttons button:hover ,.feature-buttons button:hover
         {
-            cursor: pointer;
+            background: #ffa07a
+        }
+        main {
+            width: 100%;
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 1200px;
         }
 
         nav button {
@@ -171,6 +180,10 @@
             max-width: 100%;
             border-radius: 5px;
         }
+        .category-buttons button ,.feature-buttons button 
+        {
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -194,9 +207,8 @@
             <button onclick="location.href='./onlinemarket.hotdeal.html'">온라인 마켓 핫딜</button>
         </div>
         <div class="feature-buttons">
-            <button onclick="location.href='/local-deals'">내 주변 핫딜</button>
-            <button onclick="location.href='/share-deals'">핫딜 공유</button>
-            <button onclick="location.href='/coupon-trade'">쿠폰 거래</button>
+            <button onclick="location.href='./share.hotdeal.html'">핫딜 공유</button>
+            <button onclick="location.href='./comunity.hotdeal.html'">커뮤니티</button>
         </div>
     </nav>
 
